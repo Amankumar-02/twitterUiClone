@@ -1,9 +1,14 @@
 // import './App.css'
+import { Column1, Column2, Column3 } from "./components"
 
 function App() {
   return (
     <>
-    <h1>Hello World!</h1>
+    <div className="container mx-auto flex w-full bg-black text-white mt-4">
+      <Column1/>
+      <Column2/>
+      <Column3/>
+    </div>
     </>
   )
 }
