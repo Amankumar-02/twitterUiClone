@@ -12,12 +12,12 @@ function Column3() {
         <div className="subscribe w-full rounded-2xl px-4 py-3 bg-[#202327] flex flex-col gap-2">
           <h1 className='font-bold text-xl'>Subscribe to Premium</h1>
           <p className='leading-5'>Subscribe to unlock new features and if eligible, receive a share of ads revenue.</p>
-          <button className='w-fit bg-blue-500 hover:bg-blue-600 font-bold px-4 py-1 rounded-full'>Subscribe</button>
+          <button className='w-fit bg-[#1d9cf0] hover:bg-blue-600 font-bold px-4 py-2 rounded-full'>Subscribe</button>
         </div>
-        <div className="whats w-full rounded-2xl px-4 py-3 bg-[#202327] flex flex-col gap-4">
-          <h1 className='font-bold text-xl'>What’s happening</h1>
+        <div className="whats w-full rounded-2xl bg-[#202327] flex flex-col overflow-hidden">
+          <h1 className='font-bold text-xl py-3 px-4'>What’s happening</h1>
             {whatsItems.map((item, index)=>(
-              <div key={index} className="item flex justify-between">
+              <div key={index} className="item flex justify-between px-4 py-3 hover:bg-[#1D1F23]">
                 <div className='left flex flex-col'>
                   <p className='text-gray-500 text-sm'>{item.t1}</p>
                   <h2 className='font-bold'>{item.t2}</h2>
@@ -30,6 +30,7 @@ function Column3() {
                 </div>
             </div>
             ))}
+            <a href="#" className='text-[#1d9cf0] hover:bg-[#1D1F23] p-4'>Show more</a>
         </div>
 
       </div>
